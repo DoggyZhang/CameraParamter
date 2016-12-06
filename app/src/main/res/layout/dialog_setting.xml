@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Title Photo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Photo"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!-- Face Detect -->
+        <LinearLayout
+            android:id="@+id/layout_sw_face_detect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Face Detect" />
+
+            <Switch
+                android:id="@+id/sw_face_detect"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Switch>
+
+        </LinearLayout>
+
+        <!-- Focue Mode -->
+        <LinearLayout
+            android:id="@+id/layout_sp_focus_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Focue Mode" />
+
+            <Spinner
+                android:id="@+id/sp_focus_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Preview Ratio -->
+        <LinearLayout
+            android:id="@+id/layout_sp_preview_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Preview Ratio" />
+
+            <Spinner
+                android:id="@+id/sp_preview_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Picture Ratio -->
+        <LinearLayout
+            android:id="@+id/layout_sp_picture_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Picture Ratio" />
+
+            <Spinner
+                android:id="@+id/sp_picture_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Picture Quality -->
+        <LinearLayout
+            android:id="@+id/layout_sp_picture_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Picture Quality" />
+
+            <Spinner
+                android:id="@+id/sp_picture_quality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Color Mode -->
+        <LinearLayout
+            android:id="@+id/layout_sp_color_effects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Color Mode" />
+
+            <Spinner
+                android:id="@+id/sp_color_effects"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Scene Mode -->
+        <LinearLayout
+            android:id="@+id/layout_sp_scene_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Scene Mode" />
+
+            <Spinner
+                android:id="@+id/sp_scene_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- White Balance -->
+        <LinearLayout
+            android:id="@+id/layout_sp_white_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="White Balance" />
+
+            <Spinner
+                android:id="@+id/sp_white_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- AntiBanding -->
+        <LinearLayout
+            android:id="@+id/layout_sp_antibinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="AntiBanding" />
+
+            <Spinner
+                android:id="@+id/sp_antibinding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+        <!-- Title Record -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Record"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sp_video_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Video Quliaty" />
+
+            <Spinner
+                android:id="@+id/sp_video_quality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contextClickable="true"
+                android:textAlignment="center"></Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
