@@ -9,3 +9,6 @@ Android Camera Paramters 's further encapsulation.
 
 reference:
 https://github.com/Yalantis/CameraModule
+
+blog:
+
